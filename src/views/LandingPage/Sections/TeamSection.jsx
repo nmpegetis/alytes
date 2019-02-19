@@ -16,17 +16,24 @@ import CardFooter from 'components/Card/CardFooter.jsx';
 
 import teamStyle from 'assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx';
 
-import team1 from 'assets/img/faces/avatar.jpg';
-import team2 from 'assets/img/faces/christian.jpg';
-import team3 from 'assets/img/faces/kendall.jpg';
-
+import team1 from 'assets/img/faces/captain.jpg';
+import team2 from 'assets/img/faces/teacher.jpg';
+import team3 from 'assets/img/faces/frontliner.jpg';
+import team4 from 'assets/img/faces/brainiac.jpg';
+import team5 from 'assets/img/faces/tactical.jpg';
+import team6 from 'assets/img/faces/onearm.jpg';
+import team7 from 'assets/img/faces/redcanary.jpg';
+import team8 from 'assets/img/faces/seeker.jpg';
+import team9 from 'assets/img/faces/hulk.jpg';
+import team10 from 'assets/img/faces/artist.jpg';
+import SpiderGram from './SpiderGram';
 class TeamSection extends React.Component {
 	render() {
 		const { classes } = this.props;
 		const imageClasses = classNames(classes.imgRaised, classes.imgRoundedCircle, classes.imgFluid);
 		return (
 			<div className={classes.section}>
-				<h2 className={classes.title}>Είμαστε οι Α-λύτες</h2>
+				<h2 className={classes.title}>Είμαστε οι Αλύτες</h2>
 				<h5 className={classes.smallTitle}>
 					Γνώρισε την πολυμήχανη ομάδα μας. Τίποτα δε μας σταματά. Κανένα λουκέτο, καμία πόρτα, καμία κρυπτή,
 					κανένας ιος, κανένα όνειρο, κανένα σκοτάδι, καμία αποκάλυψη, κανένας παράφρων επιστήμονας, κανένας
@@ -46,13 +53,13 @@ class TeamSection extends React.Component {
 								</h4>
 								<CardBody>
 									<p className={classes.description}>
-										<b>Περιγραφή: </b> Ο αρχηγός και πιο έμπειρος από την ομάδα μας. Εξασφαλίζει την
-										επιτυχία και την ποιότητα της κάθε αποστολής μελών της ομάδας που στέλνει σε
-										δωμάτια για απόδραση
+										<b>Περιγραφή: </b> Πίσω από ένα σωστό πλήρωμα, βρίσκεται ένας καλός καπετάνιος.
+										Όταν η τρυκιμία ξεσπάσει, είναι εκεί για να χαράξει τη μοναδική ρότα διαφυγής
 									</p>
 									<p className={classes.description}>
 										<b>Ατού: </b>Εμπειρία, Συνεργασία, Μυαλό
 									</p>
+									<SpiderGram />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>
@@ -75,13 +82,12 @@ class TeamSection extends React.Component {
 								<h4 className={classes.cardTitle}>
 									Μπόνιας Αλέξανδρος
 									<br />
-									<small className={classes.smallTitle}>Designer</small>
+									<small className={classes.smallTitle}>Teacher</small>
 								</h4>
 								<CardBody>
 									<p className={classes.description}>
-										You can write here details about one of your team members. You can give more
-										details about what they do. Feel free to add some <a href="#pablo">links</a> for
-										people to be able to follow them outside the site.
+										Mάστερ στους αναγραμματισμούς και με διδακτορικό στα λουκέτα, η πολυετής
+										εμπειρία του άκρως απαραίτητη σε γριφοδωμάτια υψηλών απαιτήσεων
 									</p>
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
@@ -102,13 +108,12 @@ class TeamSection extends React.Component {
 								<h4 className={classes.cardTitle}>
 									Πέτρος Σιαμπλής
 									<br />
-									<small className={classes.smallTitle}>Model</small>
+									<small className={classes.smallTitle}>Frontliner</small>
 								</h4>
 								<CardBody>
 									<p className={classes.description}>
-										You can write here details about one of your team members. You can give more
-										details about what they do. Feel free to add some <a href="#pablo">links</a> for
-										people to be able to follow them outside the site.
+										Η εμπροσθοφυλακή της ομάδας. Όταν ο φόβος και το απόλυτο σκοτάδι σταματούν τα
+										βήματά μας, αυτός μπαίνει μπροστά και ηγείται της πρώτης γραμμής του πολέμου
 									</p>
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
@@ -127,18 +132,17 @@ class TeamSection extends React.Component {
 						<GridItem xs={12} sm={12} md={4}>
 							<Card plain>
 								<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-									<img src={team3} alt="..." className={imageClasses} />
+									<img src={team4} alt="..." className={imageClasses} />
 								</GridItem>
 								<h4 className={classes.cardTitle}>
 									Νικόλας Μπεγέτης
 									<br />
-									<small className={classes.smallTitle}>Model</small>
+									<small className={classes.smallTitle}>Brainiac</small>
 								</h4>
 								<CardBody>
 									<p className={classes.description}>
-										You can write here details about one of your team members. You can give more
-										details about what they do. Feel free to add some <a href="#pablo">links</a> for
-										people to be able to follow them outside the site.
+										Ο εγκέφαλος της ομάδας. Έτοιμος να αποκωδικοποιήσει τον πιο πολύπλοκο γρίφο.
+										Τίποτα δεν μένει άλυτο. Ο κύκλος τετραγωνίζεται
 									</p>
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
@@ -157,18 +161,18 @@ class TeamSection extends React.Component {
 						<GridItem xs={12} sm={12} md={4}>
 							<Card plain>
 								<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-									<img src={team3} alt="..." className={imageClasses} />
+									<img src={team5} alt="..." className={imageClasses} />
 								</GridItem>
 								<h4 className={classes.cardTitle}>
 									Κώστας Παπαϊωάννου
 									<br />
-									<small className={classes.smallTitle}>Model</small>
+									<small className={classes.smallTitle}>Tactical</small>
 								</h4>
 								<CardBody>
 									<p className={classes.description}>
-										You can write here details about one of your team members. You can give more
-										details about what they do. Feel free to add some <a href="#pablo">links</a> for
-										people to be able to follow them outside the site.
+										Ο άνθρωπος για τις ειδικές αποστολές. Οταν οι καταστάσεις το απαιτούν, είναι
+										έτοιμος να τρέξει, να πηδήξει, να σκαρφαλώσει, να συρθεί και να πάρει και πέντε
+										έλξεις. Μότο του: Citius, Altius, Fortius
 									</p>
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
@@ -187,18 +191,17 @@ class TeamSection extends React.Component {
 						<GridItem xs={12} sm={12} md={4}>
 							<Card plain>
 								<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-									<img src={team3} alt="..." className={imageClasses} />
+									<img src={team6} alt="..." className={imageClasses} />
 								</GridItem>
 								<h4 className={classes.cardTitle}>
 									Γεράσιμος Τσιλιάνης
 									<br />
-									<small className={classes.smallTitle}>Model</small>
+									<small className={classes.smallTitle}>One Arm</small>
 								</h4>
 								<CardBody>
 									<p className={classes.description}>
-										You can write here details about one of your team members. You can give more
-										details about what they do. Feel free to add some <a href="#pablo">links</a> for
-										people to be able to follow them outside the site.
+										Το παράσημο της ομάδας. Με πλήρη αυταπάρνηση δεν διστάζει να θυσιάσει τον εαυτό
+										του προς όφελος της ομάδας. Αποτέλεσμα, ενας εξαρθρωμένος ώμος
 									</p>
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
@@ -217,18 +220,18 @@ class TeamSection extends React.Component {
 						<GridItem xs={12} sm={12} md={4}>
 							<Card plain>
 								<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-									<img src={team3} alt="..." className={imageClasses} />
+									<img src={team7} alt="..." className={imageClasses} />
 								</GridItem>
 								<h4 className={classes.cardTitle}>
 									Αφροδίτη Παπαλίτσα
 									<br />
-									<small className={classes.smallTitle}>Model</small>
+									<small className={classes.smallTitle}>Red Canary</small>
 								</h4>
 								<CardBody>
 									<p className={classes.description}>
-										You can write here details about one of your team members. You can give more
-										details about what they do. Feel free to add some <a href="#pablo">links</a> for
-										people to be able to follow them outside the site.
+										Η ανθρώπινη ιαχή της ομάδας. Θάρρος και τόλμη που ηχούν στα αυτιά όλων όσων πάνε
+										να τα βάλουν μαζί μας. Είμαστε οι ΑΛΥΤΕΣ! Μας ακούτε; Ερχόμαστε για ν'
+										αποδράσουμε!
 									</p>
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
@@ -247,18 +250,17 @@ class TeamSection extends React.Component {
 						<GridItem xs={12} sm={12} md={4}>
 							<Card plain>
 								<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-									<img src={team3} alt="..." className={imageClasses} />
+									<img src={team8} alt="..." className={imageClasses} />
 								</GridItem>
 								<h4 className={classes.cardTitle}>
 									Μαργαρίτα Χαραλάμπους
 									<br />
-									<small className={classes.smallTitle}>Model</small>
+									<small className={classes.smallTitle}>Seeker</small>
 								</h4>
 								<CardBody>
 									<p className={classes.description}>
-										You can write here details about one of your team members. You can give more
-										details about what they do. Feel free to add some <a href="#pablo">links</a> for
-										people to be able to follow them outside the site.
+										Για κάθε λύση, χρειάζονται στοιχεία. Όταν όλα δείχνουν μονόδρομος, είναι εκεί να
+										αναζητήσει και να ανακαλύψει τα πιο κρυφά μονοπάτια διαφυγής
 									</p>
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
@@ -277,18 +279,18 @@ class TeamSection extends React.Component {
 						<GridItem xs={12} sm={12} md={4}>
 							<Card plain>
 								<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-									<img src={team3} alt="..." className={imageClasses} />
+									<img src={team9} alt="..." className={imageClasses} />
 								</GridItem>
 								<h4 className={classes.cardTitle}>
-									Αλέξης
+									Αλέξανδρος Παντελίδης
 									<br />
-									<small className={classes.smallTitle}>Model</small>
+									<small className={classes.smallTitle}>Hulk</small>
 								</h4>
 								<CardBody>
 									<p className={classes.description}>
-										You can write here details about one of your team members. You can give more
-										details about what they do. Feel free to add some <a href="#pablo">links</a> for
-										people to be able to follow them outside the site.
+										"Ό,τι δε λύνεται, σπάζεται" η brutal πρόταση της ομάδας για δωμάτια τρόμου και
+										μη. Ιδανικό δίδυμο μαζί με Frontliner, όταν άγνωστες παρουσίες απειλούν την
+										ομάδα
 									</p>
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
@@ -307,18 +309,17 @@ class TeamSection extends React.Component {
 						<GridItem xs={12} sm={12} md={4}>
 							<Card plain>
 								<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-									<img src={team3} alt="..." className={imageClasses} />
+									<img src={team10} alt="..." className={imageClasses} />
 								</GridItem>
 								<h4 className={classes.cardTitle}>
 									Σωτήρης Αλιβιζάτος
 									<br />
-									<small className={classes.smallTitle}>Model</small>
+									<small className={classes.smallTitle}>Artist</small>
 								</h4>
 								<CardBody>
 									<p className={classes.description}>
-										You can write here details about one of your team members. You can give more
-										details about what they do. Feel free to add some <a href="#pablo">links</a> for
-										people to be able to follow them outside the site.
+										Γιατί η σωστή απόδραση αποτελεί τέχνη. Η εναλλακτική πρόταση της ομάδας σε
+										θέματα γρίφων. Όταν είναι ν' αποδράσεις, καν' το με στυλ
 									</p>
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
