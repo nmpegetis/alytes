@@ -27,6 +27,8 @@ import team8 from 'assets/img/faces/seeker.jpg';
 import team9 from 'assets/img/faces/hulk.jpg';
 import team10 from 'assets/img/faces/artist.jpg';
 import SpiderGram from './SpiderGram';
+import data from './spiderData.json';
+
 class TeamSection extends React.Component {
 	render() {
 		const { classes } = this.props;
@@ -59,7 +61,7 @@ class TeamSection extends React.Component {
 									<p className={classes.description}>
 										<b>Ατού: </b>Εμπειρία, Συνεργασία, Μυαλό
 									</p>
-									<SpiderGram />
+									<SpiderGram data={data['alytis1']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>
@@ -89,6 +91,7 @@ class TeamSection extends React.Component {
 										Mάστερ στους αναγραμματισμούς και με διδακτορικό στα λουκέτα, η πολυετής
 										εμπειρία του άκρως απαραίτητη σε γριφοδωμάτια υψηλών απαιτήσεων
 									</p>
+									<SpiderGram data={data['alytis2']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>
@@ -115,6 +118,7 @@ class TeamSection extends React.Component {
 										Η εμπροσθοφυλακή της ομάδας. Όταν ο φόβος και το απόλυτο σκοτάδι σταματούν τα
 										βήματά μας, αυτός μπαίνει μπροστά και ηγείται της πρώτης γραμμής του πολέμου
 									</p>
+									<SpiderGram data={data['alytis3']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>
@@ -144,6 +148,7 @@ class TeamSection extends React.Component {
 										Ο εγκέφαλος της ομάδας. Έτοιμος να αποκωδικοποιήσει τον πιο πολύπλοκο γρίφο.
 										Τίποτα δεν μένει άλυτο. Ο κύκλος τετραγωνίζεται
 									</p>
+									<SpiderGram data={data['alytis4']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>
@@ -174,6 +179,7 @@ class TeamSection extends React.Component {
 										έτοιμος να τρέξει, να πηδήξει, να σκαρφαλώσει, να συρθεί και να πάρει και πέντε
 										έλξεις. Μότο του: Citius, Altius, Fortius
 									</p>
+									<SpiderGram data={data['alytis5']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>
@@ -203,6 +209,7 @@ class TeamSection extends React.Component {
 										Το παράσημο της ομάδας. Με πλήρη αυταπάρνηση δεν διστάζει να θυσιάσει τον εαυτό
 										του προς όφελος της ομάδας. Αποτέλεσμα, ενας εξαρθρωμένος ώμος
 									</p>
+									<SpiderGram data={data['alytis6']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>
@@ -233,6 +240,7 @@ class TeamSection extends React.Component {
 										να τα βάλουν μαζί μας. Είμαστε οι ΑΛΥΤΕΣ! Μας ακούτε; Ερχόμαστε για ν'
 										αποδράσουμε!
 									</p>
+									<SpiderGram data={data['alytis7']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>
@@ -262,6 +270,7 @@ class TeamSection extends React.Component {
 										Για κάθε λύση, χρειάζονται στοιχεία. Όταν όλα δείχνουν μονόδρομος, είναι εκεί να
 										αναζητήσει και να ανακαλύψει τα πιο κρυφά μονοπάτια διαφυγής
 									</p>
+									<SpiderGram data={data['alytis8']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>
@@ -292,6 +301,7 @@ class TeamSection extends React.Component {
 										μη. Ιδανικό δίδυμο μαζί με Frontliner, όταν άγνωστες παρουσίες απειλούν την
 										ομάδα
 									</p>
+									<SpiderGram data={data['alytis9']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>
@@ -321,6 +331,7 @@ class TeamSection extends React.Component {
 										Γιατί η σωστή απόδραση αποτελεί τέχνη. Η εναλλακτική πρόταση της ομάδας σε
 										θέματα γρίφων. Όταν είναι ν' αποδράσεις, καν' το με στυλ
 									</p>
+									<SpiderGram data={data['alytis10']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>

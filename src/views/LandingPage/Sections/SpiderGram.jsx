@@ -6,32 +6,16 @@ import { RadarChart, XYPlot, VerticalGridLines, HorizontalGridLines, XAxis, YAxi
 // The first 6 data elements here are to simulate a 'spider' type of radar chart -
 // similar to CircularGridLines, but straight edges instead.
 
-// console.log('data', data['alytis1']);
 const LEVEL_NUM = 11;
-const createSpiderBackground = (categories, alytis) => {
+const createSpiderBackground = (categories, data) => {
 	const arr = [];
 	for (let i = 0; i < LEVEL_NUM; i++) arr.push(createLayer(categories, i));
 	arr.push({
-		...data[alytis],
+		...data,
 		fill: 'rgba(0,0,0,0.8)',
 		stroke: 'rgba(0,0,0,1)',
 	});
-	// arr.push({
-	// 	riddles: 4,
-	// 	terror: 5,
-	// 	physicalActivity: 7,
-	// 	skills: 4,
-	// 	observation: 4,
-	// 	teamSpirit: 4,
-	// 	leadership: 4,
-	// 	initiative: 4,
-	// 	modesty: 4,
-	// 	imagination: 9,
-	// 	experience: 9,
-	// 	name: `layer11`,
-	// 	fill: 'rgba(0,0,0,0.8)',
-	// 	stroke: 'rgba(0,0,0,1)',
-	// });
+
 	return arr;
 };
 
@@ -74,7 +58,6 @@ const categoryNames = {
 
 const domains = (categories) => {
 	const arr = [];
-	console.log(categories);
 	arr.push(
 		categories.map((category) => {
 			const domainObj = {};
@@ -85,7 +68,6 @@ const domains = (categories) => {
 		})
 	);
 
-	// arr.push(domainObj);
 	return arr;
 };
 // domains={[
@@ -110,110 +92,6 @@ const domains = (categories) => {
 // 	{ name: 'warranty', domain: [ 0, 10 ], getValue: (d) => d.warranty },
 // ]}
 
-// console.log(createSpiderBackground(categories));
-
-const DATA = [
-	// {
-	// 	name: 'Spider6',
-	// 	mileage: 6,
-	// 	price: 6,
-	// 	safety: 6,
-	// 	performance: 6,
-	// 	interior: 6,
-	// 	warranty: 6,
-	// 	fill: 'white',
-	// 	stroke: '#cccccc',
-	// },
-	// {
-	// 	name: 'Spider5',
-	// 	mileage: 5,
-	// 	price: 5,
-	// 	safety: 5,
-	// 	performance: 5,
-	// 	interior: 5,
-	// 	warranty: 5,
-	// 	fill: '#f8f8f8',
-	// 	stroke: '#cccccc',
-	// },
-	// {
-	// 	name: 'Spider4',
-	// 	mileage: 4,
-	// 	price: 4,
-	// 	safety: 4,
-	// 	performance: 4,
-	// 	interior: 4,
-	// 	warranty: 4,
-	// 	fill: 'white',
-	// 	stroke: '#cccccc',
-	// },
-	// {
-	// 	name: 'Spider3',
-	// 	mileage: 3,
-	// 	price: 3,
-	// 	safety: 3,
-	// 	performance: 3,
-	// 	interior: 3,
-	// 	warranty: 3,
-	// 	fill: '#f8f8f8',
-	// 	stroke: '#cccccc',
-	// },
-	// {
-	// 	name: 'Spider2',
-	// 	mileage: 2,
-	// 	price: 2,
-	// 	safety: 2,
-	// 	performance: 2,
-	// 	interior: 2,
-	// 	warranty: 2,
-	// 	fill: 'white',
-	// 	stroke: '#cccccc',
-	// },
-	// {
-	// 	name: 'Spider1',
-	// 	mileage: 1,
-	// 	price: 1,
-	// 	safety: 1,
-	// 	performance: 1,
-	// 	interior: 1,
-	// 	warranty: 1,
-	// 	fill: '#f8f8f8',
-	// 	stroke: '#cccccc',
-	// },
-	// {
-	// 	name: 'Spider0',
-	// 	mileage: 0.1,
-	// 	price: 0.1,
-	// 	safety: 0.1,
-	// 	performance: 0.1,
-	// 	interior: 0.1,
-	// 	warranty: 0.1,
-	// 	fill: '#f8f8f8',
-	// 	stroke: '#cccccc',
-	// },
-	{
-		name: 'Mercedes',
-		mileage: 3,
-		price: 4,
-		safety: 5,
-		performance: 1.5,
-		interior: 4,
-		warranty: 4.5,
-		fill: 'rgba(114,172,240,0.5)',
-		stroke: 'rgba(114,172,240,0.2)',
-	},
-];
-// const DATA = [
-// 	{
-// 		name: 'Mercedes',
-// 		mileage: 7,
-// 		price: 10,
-// 		safety: 8,
-// 		performance: 9,
-// 		interior: 7,
-// 		warranty: 7,
-// 		nikos: 8,
-// 	},
-// ];
 const tipStyle = {
 	display: 'flex',
 	color: '#fff',
@@ -233,7 +111,7 @@ class SpiderGram extends React.Component {
 	render() {
 		const { data } = this.props;
 		const { hoveredCell } = this.state;
-		const dd = createSpiderBackground(categories, 'alytis1');
+		const dd = createSpiderBackground(categories, data);
 		const ddo = domains(categories);
 		console.log('d', dd, 'domain', ddo);
 		return (
