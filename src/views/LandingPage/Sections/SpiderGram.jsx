@@ -1,8 +1,8 @@
 import React from 'react';
 import { format } from 'd3-format';
-import data from './spiderData.json';
+import withWidth from '@material-ui/core/withWidth';
 
-import { RadarChart, XYPlot, VerticalGridLines, HorizontalGridLines, XAxis, YAxis, Hint } from 'react-vis';
+import { RadarChart, Hint } from 'react-vis';
 // The first 6 data elements here are to simulate a 'spider' type of radar chart -
 // similar to CircularGridLines, but straight edges instead.
 
@@ -21,7 +21,9 @@ const createSpiderBackground = (categories, data) => {
 
 const createLayer = (categories, layerNum) => {
 	const obj = {};
-	categories.map((category) => (obj[category] = layerNum));
+	categories.map(
+		(category) => (category !== 'experience' ? (obj[category] = layerNum) : (obj[category] = layerNum * 20))
+	);
 	obj['name'] = `layer${layerNum}`;
 	obj['fill'] = layerNum % 2 ? console.log('aaa', layerNum, 'ee', layerNum % 2) || 'white' : '#ddd';
 	obj['stroke'] = `#ccc`;
@@ -70,27 +72,6 @@ const domains = (categories) => {
 
 	return arr;
 };
-// domains={[
-// 	{
-// 		name: 'mileage',
-// 		domain: [ 0, 10 ],
-// 		tickFormat: (t) => {
-// 			if (t < 5 && t > 0) {
-// 				return Math.round(t);
-// 			}
-// 			return '';
-// 		},
-// 	},
-// 	{
-// 		name: 'price',
-// 		domain: [ 0, 10 ],
-// 		getValue: (d) => d.price,
-// 	},
-// 	{ name: 'safetbby', domain: [ 0, 10 ], getValue: (d) => d.riddle },
-// 	{ name: 'performance', domain: [ 0, 10 ], getValue: (d) => d.imagination },
-// 	{ name: 'interior', domain: [ 0, 10 ], getValue: (d) => d.interior },
-// 	{ name: 'warranty', domain: [ 0, 10 ], getValue: (d) => d.warranty },
-// ]}
 
 const tipStyle = {
 	display: 'flex',
@@ -101,7 +82,6 @@ const tipStyle = {
 };
 
 const basicFormat = format('.2r');
-const wideFormat = format('.3r');
 
 class SpiderGram extends React.Component {
 	state = {
@@ -117,62 +97,13 @@ class SpiderGram extends React.Component {
 		return (
 			dd &&
 			ddo && (
-				// <RadarChart
-				// 	data={DATA}
-				// 	tickFormat={(t) => wideFormat(t)}
-				// 	startingAngle={0}
-				// 	domains={[
-				// 		{ name: 'mileage', domain: [ 0, 10 ] },
-				// 		{
-				// 			name: 'price',
-				// 			domain: [ 2, 16 ],
-				// 			tickFormat: (t) => `$${basicFormat(t)}`,
-				// 			getValue: (d) => d.price,
-				// 		},
-				// 		{ name: 'safety', domain: [ 5, 10 ], getValue: (d) => d.safety },
-				// 		{ name: 'performance', domain: [ 0, 10 ], getValue: (d) => d.performance },
-				// 		{ name: 'interior', domain: [ 0, 7 ], getValue: (d) => d.interior },
-				// 		{ name: 'warranty', domain: [ 10, 2 ], getValue: (d) => d.warranty },
-				// 	]}
-				// 	width={400}
-				// 	height={300}
-				// />
 				<RadarChart
 					data={dd}
-					// data={dd}
 					tickFormat={(t) => {
 						return '';
 					}}
 					// tickFormat={(t) => basicFormat(t)}
-					// domains={[
-					// 	{
-					// 		name: 'mileage',
-					// 		domain: [ 0, 10 ],
-					// 		tickFormat: (t) => {
-					// 			if (t < 5 && t > 0) {
-					// 				return Math.round(t);
-					// 			}
-					// 			return '';
-					// 		},
-					// 	},
-					// 	...ddo,
-					// ]}
 					domains={[
-						// {
-						// 	name: 'mileage',
-						// 	domain: [ 0, 10 ],
-						// 	tickFormat: (t) => {
-						// 		if (t < 5 && t > 0) {
-						// 			return Math.round(t);
-						// 		}
-						// 		return '';
-						// 	},
-						// },
-						// {
-						// 	name: 'leadership',
-						// 	domain: [ 0, 10 ],
-						// 	getValue: (d) => d.price,
-						// },
 						{
 							name: categoryNames['riddles'],
 							tickFormat: (t) => {
@@ -197,15 +128,25 @@ class SpiderGram extends React.Component {
 						{ name: categoryNames['initiative'], domain: [ 0, 10 ], getValue: (d) => d.initiative },
 						{ name: categoryNames['modesty'], domain: [ 0, 10 ], getValue: (d) => d.modesty },
 						{ name: categoryNames['imagination'], domain: [ 0, 10 ], getValue: (d) => d.imagination },
-						{ name: categoryNames['experience'], domain: [ 0, 10 ], getValue: (d) => d.experience },
+						{
+							name: categoryNames['experience'],
+							domain: [ 0, 200 ],
+							getValue: (d) => d.experience,
+						},
 					]}
-					width={300} //600
-					height={300} //600
-					margin={{ left: 50, right: 50, top: 50, bottom: 50 }} //100
-					// onValueMouseOver={(v) => {
-					// 	this.setState({ hoveredCell: v });
-					// }}
-					// onValueMouseOut={(v) => this.setState({ hoveredCell: false })}
+					width={this.props.width === 'xs' || this.props.width === 'sm' ? window.innerWidth / 1.5 : '280'} //600
+					height={this.props.width === 'xs' || this.props.width === 'sm' ? window.innerWidth / 1.5 : '280'} //600
+					margin={
+						this.props.width === 'xs' || this.props.width === 'sm' ? (
+							{ left: 100, right: 100, top: 100, bottom: 100 }
+						) : (
+							{ left: 50, right: 50, top: 50, bottom: 50 }
+						)
+					} //100
+					onValueMouseOver={(v) => {
+						this.setState({ hoveredCell: v });
+					}}
+					onValueMouseOut={(v) => this.setState({ hoveredCell: false })}
 					style={{
 						polygons: {
 							strokeWidth: 1,
@@ -214,7 +155,7 @@ class SpiderGram extends React.Component {
 						},
 						labels: {
 							textAnchor: 'middle',
-							fontSize: '8', //15
+							fontSize: this.props.width === 'xs' || this.props.width === 'sm' ? '12' : '8',
 						},
 						axes: {
 							line: {
@@ -229,22 +170,23 @@ class SpiderGram extends React.Component {
 							text: { padding: '100px' },
 						},
 					}}
-					// colorRange={[ 'transparent' ]}
-					// hideInnerMostValues={false}
-					// renderAxesOverPolygons={true}
+					colorRange={[ 'transparent' ]}
+					hideInnerMostValues={false}
+					renderAxesOverPolygons={true}
 				>
-					{/* {hoveredCell &&
-					hoveredCell.dataName === 'Mercedes' && (
+					{console.log('test', this.props.width)}
+					{hoveredCell &&
+					hoveredCell.dataName === dd[dd.length - 1].name && (
 						<Hint value={hoveredCell}>
 							<div style={tipStyle}>
 								{hoveredCell.domain}: {hoveredCell.value}
 							</div>
 						</Hint>
-					)} */}
+					)}
 				</RadarChart>
 			)
 		);
 	}
 }
 
-export default SpiderGram;
+export default withWidth()(SpiderGram);

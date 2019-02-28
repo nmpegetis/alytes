@@ -10,7 +10,7 @@
     "initiative": 8.3,
     "modesty": 1.5,
     "imagination": 7.8,
-    "experience": 9,
+    "experience": 170,
     "name": "Mihalis"
   },
   "alytis2": {
@@ -24,7 +24,7 @@
     "initiative": 7.7,
     "modesty": 4.9,
     "imagination": 7.9,
-    "experience": 8,
+    "experience": 105,
     "name": "AlexandrosB"
   },
   "alytis3": {
@@ -38,7 +38,7 @@
     "initiative": 8.4,
     "modesty": 1.1,
     "imagination": 4.8,
-    "experience": 8,
+    "experience": 70,
     "name": "Petros"
   },
   "alytis4": {
@@ -52,7 +52,7 @@
     "initiative": 7.7,
     "modesty": 5.2,
     "imagination": 8.2,
-    "experience": 4,
+    "experience": 42,
     "name": "Nikolas"
   },
   "alytis5": {
@@ -66,7 +66,7 @@
     "initiative": 6.8,
     "modesty": 3.3,
     "imagination": 7.2,
-    "experience": 4,
+    "experience": 40,
     "name": "Kostas"
   },
   "alytis6": {
@@ -80,7 +80,7 @@
     "initiative": 5.8,
     "modesty": 2.2,
     "imagination": 5.2,
-    "experience": 2,
+    "experience": 26,
     "name": "Jerry"
   },
   "alytis7": {
@@ -94,7 +94,7 @@
     "initiative": 6.1,
     "modesty": 2.4,
     "imagination": 6.5,
-    "experience": 3,
+    "experience": 37,
     "name": "Afroditi"
   },
   "alytis8": {
@@ -108,7 +108,7 @@
     "initiative": 5.3,
     "modesty": 7.5,
     "imagination": 5.7,
-    "experience": 2,
+    "experience": 21,
     "name": "Margarita"
   },
   "alytis9": {
@@ -122,7 +122,7 @@
     "initiative": 8,
     "modesty": 2.1,
     "imagination": 7.3,
-    "experience": 2,
+    "experience": 10,
     "name": "AlexandrosP"
   },
   "alytis10": {
@@ -136,7 +136,7 @@
     "initiative": 7,
     "modesty": 4.8,
     "imagination": 5.1,
-    "experience": 1,
+    "experience": 5,
     "name": "Sotiris"
   }
 }
