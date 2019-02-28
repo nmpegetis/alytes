@@ -4,8 +4,6 @@ import classNames from 'classnames';
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles';
 
-// @material-ui/icons
-
 // core components
 import GridContainer from 'components/Grid/GridContainer.jsx';
 import GridItem from 'components/Grid/GridItem.jsx';
@@ -16,6 +14,7 @@ import CardFooter from 'components/Card/CardFooter.jsx';
 
 import teamStyle from 'assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx';
 
+// team photos
 import team1 from 'assets/img/faces/captain.jpg';
 import team2 from 'assets/img/faces/teacher.jpg';
 import team3 from 'assets/img/faces/frontliner.jpg';
@@ -37,9 +36,8 @@ class TeamSection extends React.Component {
 			<div className={classes.section}>
 				<h2 className={classes.title}>Είμαστε οι Αλύτες</h2>
 				<h5 className={classes.smallTitle}>
-					Γνώρισε την πολυμήχανη ομάδα μας. Τίποτα δε μας σταματά. Κανένα λουκέτο, καμία πόρτα, καμία κρυπτή,
-					κανένας ιος, κανένα όνειρο, κανένα σκοτάδι, καμία αποκάλυψη, κανένας παράφρων επιστήμονας, κανένας
-					σχιζοφρενής δολοφόνος, κανένα ζόμπι, κανενός είδους τέρας, κανένα φάντασμα.
+					Γνώρισε την πολυμήχανη ομάδα μας. Τίποτα δε μας σταματά. Διαθέτουμε όλων των ειδών τις δεξιότητες
+					και προσαρμοζόμαστε σε κάθε δωμάτιο.
 				</h5>
 				<div>
 					<GridContainer>
@@ -55,13 +53,12 @@ class TeamSection extends React.Component {
 								</h4>
 								<CardBody>
 									<p className={classes.description}>
-										<b>Περιγραφή: </b> Πίσω από ένα σωστό πλήρωμα, βρίσκεται ένας καλός καπετάνιος.
-										Όταν η τρυκιμία ξεσπάσει, είναι εκεί για να χαράξει τη μοναδική ρότα διαφυγής
+										Πίσω από ένα σωστό πλήρωμα, βρίσκεται ένας καλός καπετάνιος. Όταν η τρυκιμία
+										ξεσπάσει, είναι εκεί για να χαράξει τη μοναδική ρότα διαφυγής
 									</p>
-									<p className={classes.description}>
-										<b>Ατού: </b>Εμπειρία, Συνεργασία, Μυαλό
-									</p>
-									<SpiderGram data={data['alytis1']} />
+									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+										<SpiderGram data={data['alytis1']} />
+									</GridItem>
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>
