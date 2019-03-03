@@ -56,9 +56,7 @@ class TeamSection extends React.Component {
 										Πίσω από ένα σωστό πλήρωμα, βρίσκεται ένας καλός καπετάνιος. Όταν η τρυκιμία
 										ξεσπάσει, είναι εκεί για να χαράξει τη μοναδική ρότα διαφυγής
 									</p>
-									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-										<SpiderGram data={data['alytis1']} />
-									</GridItem>
+									<SpiderGram data={data['alytis1']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
 									<Button justIcon color="transparent" className={classes.margin5}>

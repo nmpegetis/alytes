@@ -19,6 +19,7 @@ import landingPageStyle from 'assets/jss/material-kit-react/views/landingPage.js
 import ProductSection from './Sections/ProductSection.jsx';
 import TeamSection from './Sections/TeamSection.jsx';
 import WorkSection from './Sections/WorkSection.jsx';
+import img from 'assets/img/png/logo/letters/lettersblackTitle.png';
 
 const dashboardRoutes = [];
 
@@ -30,7 +31,11 @@ class LandingPage extends React.Component {
 				<Header
 					color="transparent"
 					routes={dashboardRoutes}
-					brand="ΑΛΥΤΕΣ"
+					brand={
+						<div className={classes.button}>
+							<img src={img} width="70" />
+						</div>
+					} //"ΑΛΥΤΕΣ"
 					// rightLinks={<HeaderLinks />}
 					fixed
 					changeColorOnScroll={{
