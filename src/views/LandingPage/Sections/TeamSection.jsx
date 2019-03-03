@@ -27,6 +27,7 @@ import team9 from 'assets/img/faces/hulk.jpg';
 import team10 from 'assets/img/faces/artist.jpg';
 import SpiderGram from './SpiderGram';
 import data from './spiderData.json';
+import escapeall from 'assets/img/escapeall.png';
 
 class TeamSection extends React.Component {
 	render() {
@@ -59,14 +60,32 @@ class TeamSection extends React.Component {
 									<SpiderGram data={data['alytis1']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-twitter'} />
+									<Button
+										href="https://www.escapeall.gr/el/User/Profile/284ba2d5-22f5-4390-98a0-30c6335e8752"
+										target="_blank"
+										color="transparent"
+										className={classes.navLink}
+										justIcon
+									>
+										<img src={escapeall} width="20" />
 									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-instagram'} />
-									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
+									<Button
+										href="https://www.facebook.com/michalisakos"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
 										<i className={classes.socials + ' fab fa-facebook'} />
+									</Button>
+									<Button
+										href="https://www.instagram.com/alyths_mike/"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
+										<i className={classes.socials + ' fab fa-instagram'} />
 									</Button>
 								</CardFooter>
 							</Card>
@@ -89,11 +108,32 @@ class TeamSection extends React.Component {
 									<SpiderGram data={data['alytis2']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-twitter'} />
+									<Button
+										href="https://www.escapeall.gr/el/User/Profile/27f12257-c416-477e-9586-41d2659406d1"
+										target="_blank"
+										color="transparent"
+										className={classes.navLink}
+										justIcon
+									>
+										<img src={escapeall} width="20" />
 									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-linkedin'} />
+									<Button
+										href="https://www.facebook.com/alexandros.bonias"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
+										<i className={classes.socials + ' fab fa-facebook'} />
+									</Button>
+									<Button
+										href="https://www.instagram.com/alexandrosbonias/"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
+										<i className={classes.socials + ' fab fa-instagram'} />
 									</Button>
 								</CardFooter>
 							</Card>
@@ -116,13 +156,22 @@ class TeamSection extends React.Component {
 									<SpiderGram data={data['alytis3']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-twitter'} />
+									<Button
+										href="https://www.escapeall.gr/el/User/Profile/1faba2ce-e89a-476d-8394-143a6d4d4008"
+										target="_blank"
+										color="transparent"
+										className={classes.navLink}
+										justIcon
+									>
+										<img src={escapeall} width="20" />
 									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-instagram'} />
-									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
+									<Button
+										href="https://www.facebook.com/www.peter.siamplis"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
 										<i className={classes.socials + ' fab fa-facebook'} />
 									</Button>
 								</CardFooter>
@@ -146,14 +195,41 @@ class TeamSection extends React.Component {
 									<SpiderGram data={data['alytis4']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-twitter'} />
+									<Button
+										href="https://www.escapeall.gr/el/User/Profile/2d3549c4-b299-41d8-9ac4-6012e1dafda7"
+										target="_blank"
+										color="transparent"
+										className={classes.navLink}
+										justIcon
+									>
+										<img src={escapeall} width="20" />
 									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-instagram'} />
+									<Button
+										href="https://www.linkedin.com/in/nmpegetis/"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
+										<i className={classes.socials + ' fab fa-linkedin'} />
 									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
+									<Button
+										href="https://www.facebook.com/begetis"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
 										<i className={classes.socials + ' fab fa-facebook'} />
+									</Button>
+									<Button
+										href="https://www.instagram.com/2b.leader/"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
+										<i className={classes.socials + ' fab fa-instagram'} />
 									</Button>
 								</CardFooter>
 							</Card>
@@ -177,14 +253,32 @@ class TeamSection extends React.Component {
 									<SpiderGram data={data['alytis5']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-twitter'} />
+									<Button
+										href="https://www.escapeall.gr/el/User/Profile/c5b4315a-022a-49f0-8387-3c607d1e6968"
+										target="_blank"
+										color="transparent"
+										className={classes.navLink}
+										justIcon
+									>
+										<img src={escapeall} width="20" />
 									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-instagram'} />
-									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
+									<Button
+										href="https://www.facebook.com/kostas.pap.182"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
 										<i className={classes.socials + ' fab fa-facebook'} />
+									</Button>
+									<Button
+										href="https://www.instagram.com/papaioannou.kostas26/"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
+										<i className={classes.socials + ' fab fa-instagram'} />
 									</Button>
 								</CardFooter>
 							</Card>
@@ -207,14 +301,32 @@ class TeamSection extends React.Component {
 									<SpiderGram data={data['alytis6']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-twitter'} />
+									<Button
+										href="https://www.escapeall.gr/el/User/Profile/671725d1-a70c-40c8-bc17-b62966dc525b"
+										target="_blank"
+										color="transparent"
+										className={classes.navLink}
+										justIcon
+									>
+										<img src={escapeall} width="20" />
 									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-instagram'} />
-									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
+									<Button
+										href="https://www.facebook.com/jerry.tsilianis"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
 										<i className={classes.socials + ' fab fa-facebook'} />
+									</Button>
+									<Button
+										href="https://www.instagram.com/jerry_tsilianis/"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
+										<i className={classes.socials + ' fab fa-instagram'} />
 									</Button>
 								</CardFooter>
 							</Card>
@@ -238,14 +350,32 @@ class TeamSection extends React.Component {
 									<SpiderGram data={data['alytis7']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-twitter'} />
+									<Button
+										href="https://www.escapeall.gr/el/User/Profile/3b2769f9-8770-4cc6-b557-6bb0b259a5c5"
+										target="_blank"
+										color="transparent"
+										className={classes.navLink}
+										justIcon
+									>
+										<img src={escapeall} width="20" />
 									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-instagram'} />
-									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
+									<Button
+										href="https://www.facebook.com/afrodite.papa.1"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
 										<i className={classes.socials + ' fab fa-facebook'} />
+									</Button>
+									<Button
+										href="https://www.instagram.com/afroditepapa89/"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
+										<i className={classes.socials + ' fab fa-instagram'} />
 									</Button>
 								</CardFooter>
 							</Card>
@@ -268,14 +398,41 @@ class TeamSection extends React.Component {
 									<SpiderGram data={data['alytis8']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-twitter'} />
+									<Button
+										href="https://www.escapeall.gr/el/User/Profile/7efda19f-e455-4f49-a507-9aefb4744377"
+										target="_blank"
+										color="transparent"
+										className={classes.navLink}
+										justIcon
+									>
+										<img src={escapeall} width="20" />
 									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-instagram'} />
+									<Button
+										href="https://www.linkedin.com/in/margaritacharalambous/"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
+										<i className={classes.socials + ' fab fa-linkedin'} />
 									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
+									<Button
+										href="https://www.facebook.com/margarita.charalambous.7"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
 										<i className={classes.socials + ' fab fa-facebook'} />
+									</Button>
+									<Button
+										href="https://www.instagram.com/marg.ch/"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
+										<i className={classes.socials + ' fab fa-instagram'} />
 									</Button>
 								</CardFooter>
 							</Card>
@@ -299,13 +456,22 @@ class TeamSection extends React.Component {
 									<SpiderGram data={data['alytis9']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-twitter'} />
+									<Button
+										href="https://www.escapeall.gr/el/User/Profile/de04ba53-2c7e-4243-9261-3c703d2429dd"
+										target="_blank"
+										color="transparent"
+										className={classes.navLink}
+										justIcon
+									>
+										<img src={escapeall} width="20" />
 									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-instagram'} />
-									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
+									<Button
+										href="https://www.facebook.com/alexandros.pantelidis"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
 										<i className={classes.socials + ' fab fa-facebook'} />
 									</Button>
 								</CardFooter>
@@ -329,14 +495,32 @@ class TeamSection extends React.Component {
 									<SpiderGram data={data['alytis10']} />
 								</CardBody>
 								<CardFooter className={classes.justifyCenter}>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-twitter'} />
+									<Button
+										href="https://www.escapeall.gr/el/User/Profile/c90f8e02-0b0f-41ce-8f42-3777b625b576"
+										target="_blank"
+										color="transparent"
+										className={classes.navLink}
+										justIcon
+									>
+										<img src={escapeall} width="20" />
 									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
-										<i className={classes.socials + ' fab fa-instagram'} />
-									</Button>
-									<Button justIcon color="transparent" className={classes.margin5}>
+									<Button
+										href="https://www.facebook.com/sotiris.alivizatos"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
 										<i className={classes.socials + ' fab fa-facebook'} />
+									</Button>
+									<Button
+										href="https://www.instagram.com/sotos1989/"
+										target="_blank"
+										justIcon
+										color="transparent"
+										className={classes.margin5}
+									>
+										<i className={classes.socials + ' fab fa-instagram'} />
 									</Button>
 								</CardFooter>
 							</Card>

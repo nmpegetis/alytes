@@ -36,7 +36,7 @@ class LandingPage extends React.Component {
 							<img src={img} width="70" />
 						</div>
 					} //"ΑΛΥΤΕΣ"
-					// rightLinks={<HeaderLinks />}
+					rightLinks={<HeaderLinks />}
 					fixed
 					changeColorOnScroll={{
 						height: 400,
