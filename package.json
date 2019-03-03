@@ -1,7 +1,7 @@
 {
   "name": "alytes",
-  "version": "1.0.0",
-  "description": "Material Kit React. Coded by Creative Tim",
+  "version": "1.0.1",
+  "description": "Alytes official website. Created by Nikolas Begetis, using as a starter Material Kit React(by Creative Tim)",
   "private": true,
   "main": "dist/index.js",
   "dependencies": {

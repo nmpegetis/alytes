@@ -63,7 +63,20 @@ class LandingPage extends React.Component {
 								<br />
 								<br />
 								<br />
-								<Button
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<h2 className={classes.title}>Ήλθον, λύσον και απήλθον</h2>
+								{/* <Button
 									color="danger"
 									size="lg"
 									href="" //"https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -72,7 +85,7 @@ class LandingPage extends React.Component {
 								>
 									<i className="fas fa-play" />
 									Δείτε το βιντεο
-								</Button>
+								</Button> */}
 							</GridItem>
 						</GridContainer>
 					</div>
@@ -84,7 +97,7 @@ class LandingPage extends React.Component {
 						<WorkSection />
 					</div>
 				</div>
-				{/* <Footer /> */}
+				<Footer />
 			</div>
 		);
 	}
