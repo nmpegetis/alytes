@@ -1,7 +1,7 @@
 {
   "alytis1": {
     "riddles": 8.6,
-    "terror": 6,
+    "terror": 7.3,
     "physicalActivity": 7.1,
     "skills": 8.5,
     "observation": 8.1,
@@ -10,12 +10,12 @@
     "initiative": 8.3,
     "modesty": 1.5,
     "imagination": 7.8,
-    "experience": 170,
+    "experience": 171,
     "name": "Mihalis"
   },
   "alytis2": {
     "riddles": 8.2,
-    "terror": 5,
+    "terror": 7.9,
     "physicalActivity": 6.1,
     "skills": 7.9,
     "observation": 8,
@@ -24,12 +24,12 @@
     "initiative": 7.7,
     "modesty": 4.9,
     "imagination": 7.9,
-    "experience": 105,
+    "experience": 106,
     "name": "AlexandrosB"
   },
   "alytis3": {
     "riddles": 5.7,
-    "terror": 5,
+    "terror": 1.9,
     "physicalActivity": 3.2,
     "skills": 4.3,
     "observation": 5.1,
@@ -38,12 +38,12 @@
     "initiative": 8.4,
     "modesty": 1.1,
     "imagination": 4.8,
-    "experience": 70,
+    "experience": 76,
     "name": "Petros"
   },
   "alytis4": {
     "riddles": 8.5,
-    "terror": 5,
+    "terror": 7.3,
     "physicalActivity": 6.1,
     "skills": 8.5,
     "observation": 7.4,
@@ -52,12 +52,12 @@
     "initiative": 7.7,
     "modesty": 5.2,
     "imagination": 8.2,
-    "experience": 42,
+    "experience": 43,
     "name": "Nikolas"
   },
   "alytis5": {
     "riddles": 6.5,
-    "terror": 5,
+    "terror": 6.7,
     "physicalActivity": 8.9,
     "skills": 7.8,
     "observation": 7.7,
@@ -66,12 +66,12 @@
     "initiative": 6.8,
     "modesty": 3.3,
     "imagination": 7.2,
-    "experience": 40,
+    "experience": 41,
     "name": "Kostas"
   },
   "alytis6": {
     "riddles": 5.3,
-    "terror": 5,
+    "terror": 7.5,
     "physicalActivity": 3.2,
     "skills": 6.3,
     "observation": 6.1,
@@ -85,7 +85,7 @@
   },
   "alytis7": {
     "riddles": 6.8,
-    "terror": 5,
+    "terror": 8.1,
     "physicalActivity": 5.7,
     "skills": 7.5,
     "observation": 6.4,
@@ -99,7 +99,7 @@
   },
   "alytis8": {
     "riddles": 5.5,
-    "terror": 5,
+    "terror": 8.8,
     "physicalActivity": 6.1,
     "skills": 6.7,
     "observation": 6.4,
@@ -113,7 +113,7 @@
   },
   "alytis9": {
     "riddles": 5.9,
-    "terror": 5,
+    "terror": 1.6,
     "physicalActivity": 6.9,
     "skills": 8.1,
     "observation": 6.2,
@@ -127,7 +127,7 @@
   },
   "alytis10": {
     "riddles": 5.2,
-    "terror": 5,
+    "terror": 2.5,
     "physicalActivity": 5.5,
     "skills": 7.7,
     "observation": 6.6,
