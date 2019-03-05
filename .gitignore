@@ -26,3 +26,10 @@ yarn-error.log*
 /dist
 # compiled css
 *.css
+
+# images
+src/assets/img/png/logo/hooded man/*
+src/assets/img/png/t-shirt/*
+src/assets/img/apple-icon2.png
+src/assets/img/favicon2.png
+public/favicon2.ico

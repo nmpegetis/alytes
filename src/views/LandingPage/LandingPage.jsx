@@ -20,6 +20,7 @@ import ProductSection from './Sections/ProductSection.jsx';
 import TeamSection from './Sections/TeamSection.jsx';
 import WorkSection from './Sections/WorkSection.jsx';
 import img from 'assets/img/png/logo/letters/lettersblackTitle.png';
+import img2 from 'assets/img/png/logo/letters/ilthon1.png';
 
 const dashboardRoutes = [];
 
@@ -75,7 +76,10 @@ class LandingPage extends React.Component {
 								<br />
 								<br />
 								<br />
-								<h2 className={classes.title}>Ήλθον, λύσον και απήλθον</h2>
+								{/* <h2 className={classes.title}>Ήλθον, λύσον και απήλθον</h2> */}
+								<div className={classes.button}>
+									<img src={img2} width="350" />
+								</div>
 								{/* <Button
 									color="danger"
 									size="lg"
@@ -94,7 +98,7 @@ class LandingPage extends React.Component {
 					<div className={classes.container}>
 						<ProductSection />
 						<TeamSection />
-						<WorkSection />
+						{/* <WorkSection /> */}
 					</div>
 				</div>
 				<Footer />

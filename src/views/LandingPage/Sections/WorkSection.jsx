@@ -22,10 +22,18 @@ class WorkSection extends React.Component {
 							Επικοινώνησε μαζί μας. Γράψε μας μερικές γραμμές για τα δωμάτια που έχεις πάει ή ρώτα μας
 							για τα δωμάτια που θέλεις να πας. Μία παράγραφος που θα περιγράφει τα παραπάνω είναι αρκετή.
 						</h4>
-						<form>
+						<form
+							action="https://script.google.com/macros/s/AKfycbxxRm30w9QSCZEJmJ4BltCddZRQe--LVFG7vlMqyA/exec"
+							method="post"
+							id="gform"
+							enctype="text/plain"
+							data-email
+						>
 							<GridContainer>
 								<GridItem xs={12} sm={12} md={6}>
 									<CustomInput
+										type="text"
+										name="name"
 										labelText="Όνομα"
 										id="name"
 										formControlProps={{
@@ -35,16 +43,20 @@ class WorkSection extends React.Component {
 								</GridItem>
 								<GridItem xs={12} sm={12} md={6}>
 									<CustomInput
+										type="text"
 										labelText="Email"
 										id="email"
+										name="email"
 										formControlProps={{
 											fullWidth: true,
 										}}
 									/>
 								</GridItem>
 								<CustomInput
+									type="text"
 									labelText="Το μήνυμά σου"
 									id="message"
+									name="message"
 									formControlProps={{
 										fullWidth: true,
 										className: classes.textArea,
@@ -56,7 +68,9 @@ class WorkSection extends React.Component {
 								/>
 								<GridContainer justify="center">
 									<GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
-										<Button color="primary">Αποστολη</Button>
+										<Button type="submit" id="submit" name="submit" color="primary">
+											Αποστολη
+										</Button>
 									</GridItem>
 								</GridContainer>
 							</GridContainer>

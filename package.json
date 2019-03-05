@@ -1,6 +1,6 @@
 {
   "name": "alytes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Alytes official website. Created by Nikolas Begetis, using as a starter Material Kit React(by Creative Tim)",
   "private": true,
   "main": "dist/index.js",
